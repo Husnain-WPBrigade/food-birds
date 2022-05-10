@@ -1,0 +1,688 @@
+body {
+  font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------- 
+----------------------- Header-Navlinks Section Styles ----------------------
+------------------------------------------- */
+
+.hero-wrapper {
+  display: flex;
+}
+
+.header-section {
+  background-color: #fcfcfc;
+  display: inline-block;
+  /* width: 22.3%; */
+  width: 22%;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-block {
+  background: url("../images/logo-shadow.png");
+  width: 100%;
+  /* height: 100%; */
+  background-repeat: no-repeat;
+  background-position-x: center;
+  object-fit: cover;
+  height: 30%;
+  padding: 45px 25px 29px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-attachment: local;
+}
+
+.nav-links {
+  font-family: "akrobat";
+  list-style: none;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 90px;
+}
+
+.nav-link-item {
+  font-family: "akrobat";
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link-item a {
+  backface-visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link-item a:hover {
+  font-weight: 700;
+}
+
+.nav-link-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/line.png");
+  width: 140%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: contain;
+  height: 100%;
+  top: 43px;
+  right: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.nav-link-item:not(:last-child) {
+  margin-bottom: 37px;
+}
+
+.nav-icons {
+  display: flex;
+}
+
+.nav-icon-item {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-icon-item:nth-child(2) {
+  margin: 0 32px;
+}
+
+.nav-icon-item img {
+  width: auto;
+}
+
+.menu-close {
+  width: auto;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-close {
+  width: 20px;
+}
+
+.nav-icon-item:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-links {
+    margin-bottom: 40px;
+    margin-top: 70px;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .header-section {
+    width: 24.3%;
+  }
+
+  .nav-links {
+    margin-bottom: 0;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .show-nav {
+    display: none;
+  }
+
+  .header-section {
+    position: fixed;
+    z-index: 88;
+    height: 100%;
+    width: 64.4%;
+  }
+
+  .nav-block {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .nav-links {
+    /* margin-bottom: 70px; */
+    margin-bottom: 40px;
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+
+  .menu-close {
+    display: block;
+  }
+}
+
+/* ---------------------------------- 
+----------------------- Main Section Styles ----------------------
+------------------------------------------- */
+
+.main-section {
+  /* width: 77.7%; */
+  width: 76.6%;
+}
+
+@media screen and (max-width: 730px) {
+  .main-section {
+    width: 75.7%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main-section {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------- 
+----------------------- Mobile Menu Section Styles ----------------------
+------------------------------------------- */
+.mobile-menu {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fbfbfb;
+  padding: 6px 18px;
+}
+
+.mobile-menu img {
+  width: auto;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.show-mobile-menu {
+  display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+/* ---------------------------------- 
+----------------------- Hero-Content Section Styles ----------------------
+------------------------------------------- */
+
+.hero-intro-image {
+  position: relative;
+  display: flex;
+}
+
+.hero-image-text {
+  position: absolute;
+  bottom: 27px;
+  left: 49%;
+  transform: translate(-50%);
+  padding: 20px;
+  word-break: break-all;
+}
+
+.hero-title {
+  font-family: "akrobat";
+  font-size: 64px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-shadow: 3px 3px 25px rgb(24, 24, 24);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-text-content {
+  background-color: #f1efe9;
+  padding: 84px 73px 104px 73px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-description {
+  font-family: "Chaparral Pro";
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+.btn {
+  font-family: "akrobat";
+  font-size: 19px;
+  padding: 9px 25px;
+  text-transform: uppercase;
+  background: #fc8c15;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e9861e;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-text-content {
+    padding: 75px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .hero-text-content {
+    padding: 40px;
+  }
+
+  .hero-image-text {
+    bottom: 30px;
+  }
+
+  .hero-title {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero-text-content {
+    padding: 35px 20px 45px 20px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-image-text {
+    bottom: 23px;
+    padding: 0;
+  }
+
+  .hero-description {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+}
+
+/* ---------------------------------- 
+----------------------- Slider-Content Section Styles ----------------------
+------------------------------------------- */
+.slider-section {
+  background: #fff url("../images/slidersectionbg.png");
+  padding: 67px 95px 91px 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-section-title {
+  font-family: "akrobat";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+  font-size: 28px;
+}
+
+.slider-wrapper {
+  width: 80%;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.image-slider.swiper {
+  border: 4px solid black;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-slider .swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -10px;
+  left: auto;
+}
+
+.image-slider .swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 0px;
+  right: auto;
+}
+
+.slider-arrow-wrapper {
+  position: absolute;
+  z-index: -1;
+  background-color: #000;
+  width: 22px;
+  height: 22px;
+  right: -19px;
+  border-radius: 50%;
+  top: 38%;
+  transform: translateY(-50%);
+}
+
+.image-slider-prev .slider-arrow-wrapper {
+  right: 0;
+  left: -20px;
+}
+
+.slider-arrow-wrapper img {
+  width: 30%;
+  left: 9px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-slider-prev .slider-arrow-wrapper img {
+  left: 7px;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-pagination.image-slider-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -30px;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #ffffff;
+  border: 2px solid black;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ee5307;
+  border: 2px solid black;
+  width: 12px;
+  height: 12px;
+}
+
+.slider-text-content {
+  margin-top: 67px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 83px;
+}
+
+.slider-title {
+  font-family: "akrobat";
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.slider-description {
+  font-family: "Chaparral Pro";
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+
+@media screen and (max-width: 900px) {
+  .slider-section {
+    padding: 60px 75px;
+  }
+
+  .slider-section-title {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .slider-section {
+    padding: 50px 40px;
+  }
+
+  .slider-text-content {
+    padding: 0px 45px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slider-section {
+    padding: 30px 15px 47px 15px;
+  }
+
+  .slider-text-content {
+    padding: 0 10px;
+    margin-top: 57px;
+  }
+
+  .slider-section-title {
+    margin-bottom: 13px;
+    font-size: 23px;
+  }
+
+  .slider-title {
+    font-size: 21px;
+    margin-bottom: 12px;
+  }
+
+  .slider-description {
+    margin-bottom: 23px;
+  }
+}
+
+/* ---------------------------------- 
+----------------------- Card-Content Section Styles ----------------------
+------------------------------------------- */
+.card-section {
+  background-color: #f1efe9;
+  padding: 68px 56px 89px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  margin-bottom: 52px;
+}
+
+.card-section-title {
+  font-family: "akrobat";
+  font-weight: 700;
+  font-size: 27px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+.card-box {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px 52px 30px;
+}
+
+.card-box:nth-child(1) .card-header {
+  margin-top: 37px;
+}
+
+.card-box:not(:last-child) {
+  margin-right: 20px;
+}
+
+.card-body {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.card-body-title {
+  font-family: "akrobat";
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-body-description {
+  font-family: "Chaparral Pro";
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 17px;
+}
+
+.card-body-link {
+  font-family: "Chaparral Pro";
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 18px;
+  color: #959595;
+  margin-top: 14px;
+}
+
+.card-body-link:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .card-section {
+    padding: 55px 35px;
+  }
+
+  .card-box {
+    padding: 30px;
+  }
+
+  .card-box:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .card-box {
+    padding: 20px;
+  }
+
+  .card-section {
+    padding: 50px 25px;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .card-box:not(:last-child) {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .card-section {
+    padding: 32px 20px;
+  }
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .card-box:not(:last-child) {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .card-section-title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+}
+
+/* ---------------------------------- 
+----------------------- Footer Section Styles ----------------------
+------------------------------------------- */
+
+.footer-section {
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}

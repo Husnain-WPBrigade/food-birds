@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "akrobat";
+  src: url("akrobat-bold-webfont.woff2") format("woff2"),
+    url("akrobat-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat";
+  src: url("akrobat-light-webfont.woff2") format("woff2"),
+    url("akrobat-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat";
+  src: url("akrobat-regular-webfont.woff2") format("woff2"),
+    url("akrobat-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat";
+  src: url("akrobat-semibold-webfont.woff2") format("woff2"),
+    url("akrobat-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chaparral Pro";
+  src: url("ChaparralPro-Bold.woff2") format("woff2"),
+    url("ChaparralPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chaparral Pro";
+  src: url("ChaparralPro-Regular.woff2") format("woff2"),
+    url("ChaparralPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chaparral Pro";
+  src: url("Chaparral-Pro-Semibold.woff2") format("woff2"),
+    url("Chaparral-Pro-Semibold.woff") format("woff");
+  font-weight: semibold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chaparral Pro";
+  src: url("Chaparral Pro Italic.woff2") format("woff2"),
+    url("Chaparral Pro Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
