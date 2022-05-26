@@ -1,6 +1,7 @@
 const menuIcon = document.querySelector(".menu-icon");
 const menuClose = document.querySelector(".menu-close");
 const sideNav = document.querySelector(".header-section");
+const body = document.getElementsByTagName("body");
 
 var swiper = new Swiper(".image-slider", {
   slidesPerView: 1,
@@ -16,10 +17,14 @@ var swiper = new Swiper(".image-slider", {
   },
 });
 
-menuIcon.addEventListener("click", () => {
-  sideNav.classList.toggle("show-nav");
-});
+menuIcon.addEventListener("click", showNav);
+menuClose.addEventListener("click", showNav);
 
-menuClose.addEventListener("click", () => {
+function showNav() {
   sideNav.classList.toggle("show-nav");
-});
+  if (sideNav.classList.contains("show-nav")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+}

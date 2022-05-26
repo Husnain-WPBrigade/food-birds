@@ -13,12 +13,12 @@
     <title>FoodBirds | Landing Page</title>
   </head>
   <body>
-    <section class="hero-nav-section">
-      <div class="container hero-wrapper">
+    <div class="app">
+      <div class="container app__wrapper">
         <!-- ---------------------------------
-                ------------------------------- Header Section --------------------------
+                ------------------------------- Header - Nav - Section --------------------------
             -------------------------------------------------------- -->
-        <header class="header-section show-nav">
+        <header class="header-section">
           <img class="menu-close" src="assets/images/close-icon.png" alt="" />
           <nav class="nav-block">
             <div class="nav-logo-box">
@@ -53,13 +53,12 @@
             </div>
           </nav>
         </header>
+
         <!-- ---------------------------------
                 ------------------------------- Main Body Content --------------------------
             -------------------------------------------------------- -->
         <main class="main-section">
-          <!-- ---------------------------------
-                ------------------------------- Mobile Menu Section --------------------------
-            -------------------------------------------------------- -->
+          <!-- ---------------- Mobile - Menu ---------------------- -->
           <div class="mobile-menu">
             <img
               class="menu-icon"
@@ -81,14 +80,21 @@
                 ------------------------------- Hero Section --------------------------
             -------------------------------------------------------- -->
           <section class="hero-section">
-            <div class="hero-intro-image">
+            <div class="hero-image-wrapper">
               <img src="assets/images/homepagebannerimg.png" alt="hero-image" />
-              <div class="hero-image-text">
-                <h1 class="hero-title">Welkom</h1>
-              </div>
             </div>
-            <div class="hero-text-content">
-              <p class="hero-description">
+
+            <div class="hero-content">
+              <h1 class="hero-title">Welkom</h1>
+            </div>
+          </section>
+
+          <!-- ---------------------------------
+                ------------------------------- CTA - Content - Section --------------------------
+            -------------------------------------------------------- -->
+          <section class="cta-section">
+            <div class="cta-content">
+              <p class="cta-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -96,86 +102,100 @@
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur.
               </p>
-              <button class="btn">lees meer</button>
+              <button class="btn cta-btn">lees meer</button>
             </div>
           </section>
+
           <!-- ---------------------------------
                 ------------------------------- Slider Section --------------------------
             -------------------------------------------------------- -->
           <section class="slider-section">
-            <h2 class="slider-section-title">foodbirds</h2>
-            <div class="slider-wrapper">
-              <div class="swiper image-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="assets/images/sliderimg.png" alt="slider-image" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="assets/images/sliderimg2.png"
-                      alt="slider-image"
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/images/sliderimg.png" alt="slider-image" />
+            <div class="slider-section-content">
+              <h2 class="slider-section-title">foodbirds</h2>
+              <div class="slider-wrapper">
+                <div class="swiper image-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/images/sliderimg.png"
+                        alt="slider-image"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/images/sliderimg2.png"
+                        alt="slider-image"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="assets/images/sliderimg.png"
+                        alt="slider-image"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-button-next image-slider-next">
-                <div class="slider-arrow-wrapper">
-                  <img src="assets/images/rightarrow.png" alt="" />
+                <div class="swiper-button-next image-slider-next">
+                  <div class="slider-arrow-wrapper">
+                    <img src="assets/images/rightarrow.png" alt="" />
+                  </div>
                 </div>
-              </div>
-              <div class="swiper-button-prev image-slider-prev">
-                <div class="slider-arrow-wrapper">
-                  <img src="assets/images/leftarrow.png" alt="" />
+                <div class="swiper-button-prev image-slider-prev">
+                  <div class="slider-arrow-wrapper">
+                    <img src="assets/images/leftarrow.png" alt="" />
+                  </div>
                 </div>
+                <div class="swiper-pagination image-slider-pagination"></div>
               </div>
-              <div class="swiper-pagination image-slider-pagination"></div>
-            </div>
-            <div class="slider-text-content">
-              <h2 class="slider-title">Lorem ipsum dolor</h2>
-              <p class="slider-description">
-                Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed
-                do eiusmod tempor et dolore aliqua.
-              </p>
-              <button class="btn">naar deze foodtruck</button>
+              <div class="slider-text-content">
+                <h2 class="slider-title">Lorem ipsum dolor</h2>
+                <p class="slider-description">
+                  Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed
+                  do eiusmod tempor et dolore aliqua.
+                </p>
+                <button class="btn slider-btn">naar deze foodtruck</button>
+              </div>
             </div>
           </section>
+
           <!-- ---------------------------------
                 ------------------------------- Card Section --------------------------
             -------------------------------------------------------- -->
           <section class="card-section">
-            <h2 class="card-section-title">wij zijn trots op onze partners</h2>
-            <div class="cards-wrapper">
-              <article class="card-box">
-                <div class="card-header">
-                  <img src="assets/images/gcd-logo.png" alt="gcd-logo" />
-                </div>
-                <div class="card-body">
-                  <h3 class="card-body-title">gedachtegoed</h3>
-                  <p class="card-body-description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Molestiae, mollitia.
-                  </p>
-                  <a href="#" class="card-body-link">www.gedachtegoed.nl</a>
-                </div>
-              </article>
-              <article class="card-box">
-                <div class="card-header">
-                  <img src="assets/images/gutsandglury.png" alt="gcd-logo" />
-                </div>
-                <div class="card-body">
-                  <h3 class="card-body-title">guts & glory</h3>
-                  <p class="card-body-description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Molestiae, mollitia.
-                  </p>
-                  <a href="#" class="card-body-link">www.gedachtegoed.nl</a>
-                </div>
-              </article>
+            <div class="card-section-content">
+              <h2 class="card-section-title">
+                wij zijn trots op onze partners
+              </h2>
+              <div class="cards-wrapper">
+                <article class="card-box">
+                  <div class="card-header">
+                    <img src="assets/images/gcd-logo.png" alt="gcd-logo" />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-body-title">gedachtegoed</h3>
+                    <p class="card-body-description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae, mollitia.
+                    </p>
+                    <a href="#" class="card-body-link">www.gedachtegoed.nl</a>
+                  </div>
+                </article>
+                <article class="card-box">
+                  <div class="card-header">
+                    <img src="assets/images/gutsandglury.png" alt="gcd-logo" />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-body-title">guts & glory</h3>
+                    <p class="card-body-description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestiae, mollitia.
+                    </p>
+                    <a href="#" class="card-body-link">www.gedachtegoed.nl</a>
+                  </div>
+                </article>
+              </div>
+              <button class="btn card-btn">bekijk hier alle partners</button>
             </div>
-            <button class="btn">bekijk hier alle partners</button>
           </section>
           <!-- ---------------------------------
                 ------------------------------- Footer Section --------------------------
@@ -185,7 +205,7 @@
           </footer>
         </main>
       </div>
-    </section>
+    </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
