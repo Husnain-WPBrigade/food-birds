@@ -223,48 +223,50 @@ img {
 ------------------------------------------- */
 
 .hero-section {
-  position: relative;
+  background-image: url("../images/homepagebannerimg.png");
+  height: 369px;
+  width: 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-position: center;
+  background-size: cover;
 }
 
-.hero-image-wrapper {
-  display: flex;
+.hero-content h1 {
+  font-family: "akrobat";
+  font-size: 64px;
+  letter-spacing: 0.7px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .hero-content {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   justify-content: flex-end;
   width: 100%;
+  height: 100%;
 }
 
 .hero-title {
-  font-family: "akrobat";
-  font-size: 64px;
-  letter-spacing: 0.7px;
   text-align: center;
   text-shadow: 3px 3px 25px rgb(24, 24, 24);
-  color: #fff;
-  text-transform: uppercase;
   margin-top: auto;
   margin-bottom: 26px;
 }
 
 @media screen and (max-width: 768px) {
-  .hero-title {
+  .hero-content h1 {
     font-size: 55px;
     margin-bottom: 14px;
   }
 }
 
 @media screen and (max-width: 640px) {
-  .hero-title {
+  .hero-content h1 {
     font-size: 42px;
   }
 
@@ -721,8 +723,10 @@ img {
 ------------------------------------------- */
 
 .footer-section {
+  background-image: url("../images/footerimg.png");
+  min-height: 335px;
   width: 100%;
   background-repeat: no-repeat;
-  object-fit: cover;
   display: flex;
+  background-size: cover;
 }

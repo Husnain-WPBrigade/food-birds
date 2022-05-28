@@ -5,7 +5,7 @@ const body = document.getElementsByTagName("body");
 
 var swiper = new Swiper(".image-slider", {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 0,
   loop: true,
   pagination: {
     el: ".image-slider-pagination",
